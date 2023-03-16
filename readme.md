@@ -15,7 +15,7 @@ S3권한이 있는 사용자 계정으로 수정하여야 합니다.
 예를 들어, 다음과 같이 실행할 수 있습니다.
 
 ```shell
-python s3_upload.py --local_folder /path/to/local/folder --bucket_folder /path/to/bucket/folder --bucket_name my-bucket
+python main.py -l /path/to/local/folder -b /path/to/bucket/folder -bn my-bucket
 ```
 이 코드는 S3Uploader 클래스를 사용하여 로컬 폴더에 있는 jpg 파일들을 S3 버킷으로 업로드하고 로컬 파일은 삭제합니다.
 업로드 중 발생하는 log파일 역시 동일한 버킷 /log 폴더에 업로드 합니다.
